@@ -18,5 +18,16 @@
       "es2018",
       "dom"
     ]
+    // good practicies
+//    "no-inferrable-types": [true, "ignore-params"], // typ przy deklaracji obiektu
+//    "parameters-max-number": [true, 10], // parametry max: 10
+//    "cognitive-complexity": [true, 10], // max: 10 “if/else/switch”
+//    "no-big-function": [true, 100], // max 100 lini (20 idealnie)
+//    "no-commented-out-code": true, // zakomentowany kod
+//    "no-duplicate-string": [true, 5], // ten sam string 5x w kodzie
+//    "noImpicitAny": true, // typ argumentu funkcji
+//    "noImplicitReturns": true, // funkcja powinna zwracac ten sam typ
+//    "noUnusedParameters": true,
+//    "noUnusedLocals": true
   }
 }
