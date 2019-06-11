@@ -4,7 +4,7 @@ import * as fromAuth from './auth/auth.reducer';
 
 export interface State {
   ui: fromUi.State;
-  auth: fromAuth.State
+  auth: fromAuth.State;
 }
 
 export const reducers: ActionReducerMap<State> = {

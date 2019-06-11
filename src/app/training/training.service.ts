@@ -1,8 +1,8 @@
-import { Exercise } from './exercise.model';
-import { Subject, Subscription } from 'rxjs';
-import { AngularFirestore } from '@angular/fire/firestore';
 import { Injectable } from '@angular/core';
+import { AngularFirestore } from '@angular/fire/firestore';
+import { Subject, Subscription } from 'rxjs';
 import { UiService } from '../shared/ui.service';
+import { Exercise } from './exercise.model';
 
 @Injectable()
 export class TrainingService {
