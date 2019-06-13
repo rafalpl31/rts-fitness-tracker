@@ -1,3 +1,5 @@
+import { createFeatureSelector, createSelector } from '@ngrx/store';
+import * as fromRoot from '../app.reducer';
 import {
   TrainingActions,
   SET_AVAILABLE_TRAININGS,
@@ -6,8 +8,6 @@ import {
   STOP_TRAINING
 } from './training.actions';
 import { Exercise } from './exercise.model';
-import * as fromRoot from '../app.reducer';
-import { createFeatureSelector, createSelector } from '@ngrx/store';
 
 export interface TrainingState {
   availableExercises: Exercise[];

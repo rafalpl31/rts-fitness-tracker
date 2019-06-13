@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { Store } from '@ngrx/store';
-import { Subject, Subscription } from 'rxjs';
+import { Subscription } from 'rxjs';
+import { take } from 'rxjs/operators';
 import { UiService } from '../shared/ui.service';
+import * as UI from '../shared/ui.actions';
 import { Exercise } from './exercise.model';
 import * as fromTraining from './training.reducer';
-import * as UI from '../shared/ui.actions';
 import * as Training from './training.actions';
-import { take } from 'rxjs/operators';
 
 @Injectable()
 export class TrainingService {
