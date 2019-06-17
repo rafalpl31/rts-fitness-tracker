@@ -20,7 +20,7 @@ export class AuthService {
   ) {}
 
   initAuthListener() {
-    this.fireAuth.authState.subscribe(user => {
+    this.fireAuth.authState.subscribe((user) => {
       if (user) {
         this.store.dispatch(new Auth.SetAuthenticated());
         this.router.navigate(['/training']);
