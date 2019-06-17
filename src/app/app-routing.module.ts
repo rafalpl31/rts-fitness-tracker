@@ -7,7 +7,7 @@ const routes: Routes = [
   { path: '', component: WelcomeComponent },
   {
     path: 'training',
-    loadChildren: () => import('./training/training.module').then(mod => mod.TrainingModule),
+    loadChildren: () => import('./training/training.module').then((mod) => mod.TrainingModule),
     canLoad: [AuthGuards]
   }
 ];
@@ -17,4 +17,4 @@ const routes: Routes = [
   exports: [RouterModule],
   providers: [AuthGuards]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
